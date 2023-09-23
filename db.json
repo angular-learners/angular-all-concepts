@@ -1,0 +1,362 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "password": "P@ssw0rd",
+      "mobileNumberList": ["123-456-7890", "987-654-3210"],
+      "createdDate": "2023-09-23",
+      "updatedDate": "2023-09-23",
+      "status": "active",
+      "dob": "1990-05-15",
+      "addressList": [
+        {
+          "city": "New York",
+          "pincode": "10001",
+          "state": "New York",
+          "country": "USA",
+          "landmark": "Central Park"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "alice.smith@example.com",
+      "password": "SecurePass123",
+      "mobileNumberList": ["555-123-4567"],
+      "createdDate": "2023-09-22",
+      "updatedDate": "2023-09-22",
+      "status": "active",
+      "dob": "1985-12-10",
+      "addressList": [
+        {
+          "city": "Los Angeles",
+          "pincode": "90001",
+          "state": "California",
+          "country": "USA",
+          "landmark": "Hollywood Sign"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Robert",
+      "lastName": "Johnson",
+      "email": "robert.johnson@example.com",
+      "password": "Passw0rd!",
+      "mobileNumberList": ["777-888-9999"],
+      "createdDate": "2023-09-21",
+      "updatedDate": "2023-09-21",
+      "status": "inactive",
+      "dob": "1978-08-25",
+      "addressList": [
+        {
+          "city": "Chicago",
+          "pincode": "60601",
+          "state": "Illinois",
+          "country": "USA",
+          "landmark": "Navy Pier"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "email": "emily.brown@example.com",
+      "password": "BrownE@123",
+      "mobileNumberList": ["333-555-7777"],
+      "createdDate": "2023-09-20",
+      "updatedDate": "2023-09-20",
+      "status": "active",
+      "dob": "1992-03-18",
+      "addressList": [
+        {
+          "city": "San Francisco",
+          "pincode": "94102",
+          "state": "California",
+          "country": "USA",
+          "landmark": "Golden Gate Bridge"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "David",
+      "lastName": "Lee",
+      "email": "david.lee@example.com",
+      "password": "LeeD@2023",
+      "mobileNumberList": ["111-222-3333"],
+      "createdDate": "2023-09-19",
+      "updatedDate": "2023-09-19",
+      "status": "active",
+      "dob": "1980-11-30",
+      "addressList": [
+        {
+          "city": "Houston",
+          "pincode": "77001",
+          "state": "Texas",
+          "country": "USA",
+          "landmark": "NASA Johnson Space Center"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "firstName": "Sophia",
+      "lastName": "Wilson",
+      "email": "sophia.wilson@example.com",
+      "password": "SecurePass321",
+      "mobileNumberList": ["888-777-6666"],
+      "createdDate": "2023-09-18",
+      "updatedDate": "2023-09-18",
+      "status": "active",
+      "dob": "1987-07-05",
+      "addressList": [
+        {
+          "city": "Miami",
+          "pincode": "33101",
+          "state": "Florida",
+          "country": "USA",
+          "landmark": "South Beach"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "firstName": "Liam",
+      "lastName": "Martin",
+      "email": "liam.martin@example.com",
+      "password": "MartinLiam!23",
+      "mobileNumberList": ["444-333-2222"],
+      "createdDate": "2023-09-17",
+      "updatedDate": "2023-09-17",
+      "status": "inactive",
+      "dob": "1975-09-14",
+      "addressList": [
+        {
+          "city": "Seattle",
+          "pincode": "98101",
+          "state": "Washington",
+          "country": "USA",
+          "landmark": "Space Needle"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "firstName": "Olivia",
+      "lastName": "Thompson",
+      "email": "olivia.thompson@example.com",
+      "password": "ThompsonOlivia$",
+      "mobileNumberList": ["999-000-1111"],
+      "createdDate": "2023-09-16",
+      "updatedDate": "2023-09-16",
+      "status": "active",
+      "dob": "1995-01-22",
+      "addressList": [
+        {
+          "city": "Boston",
+          "pincode": "02101",
+          "state": "Massachusetts",
+          "country": "USA",
+          "landmark": "Freedom Trail"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "firstName": "Noah",
+      "lastName": "Clark",
+      "email": "noah.clark@example.com",
+      "password": "ClarkNoah!2023",
+      "mobileNumberList": ["222-444-6666"],
+      "createdDate": "2023-09-15",
+      "updatedDate": "2023-09-15",
+      "status": "active",
+      "dob": "1982-04-12",
+      "addressList": [
+        {
+          "city": "Dallas",
+          "pincode": "75201",
+          "state": "Texas",
+          "country": "USA",
+          "landmark": "The Sixth Floor Museum"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "firstName": "Ava",
+      "lastName": "Harris",
+      "email": "ava.harris@example.com",
+      "password": "HarrisAva456",
+      "mobileNumberList": ["777-666-5555"],
+      "createdDate": "2023-09-14",
+      "updatedDate": "2023-09-14",
+      "status": "active",
+      "dob": "1993-06-28",
+      "addressList": [
+        {
+          "city": "Philadelphia",
+          "pincode": "19101",
+          "state": "Pennsylvania",
+          "country": "USA",
+          "landmark": "Independence Hall"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "firstName": "Mia",
+      "lastName": "Jackson",
+      "email": "mia.jackson@example.com",
+      "password": "JacksonMia#789",
+      "mobileNumberList": ["111-333-5555"],
+      "createdDate": "2023-09-13",
+      "updatedDate": "2023-09-13",
+      "status": "active",
+      "dob": "1991-09-03",
+      "addressList": [
+        {
+          "city": "Atlanta",
+          "pincode": "30301",
+          "state": "Georgia",
+          "country": "USA",
+          "landmark": "Centennial Olympic Park"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "firstName": "Ethan",
+      "lastName": "Anderson",
+      "email": "ethan.anderson@example.com",
+      "password": "EAnderson789!",
+      "mobileNumberList": ["555-777-9999"],
+      "createdDate": "2023-09-12",
+      "updatedDate": "2023-09-12",
+      "status": "active",
+      "dob": "1988-02-17",
+      "addressList": [
+        {
+          "city": "Phoenix",
+          "pincode": "85001",
+          "state": "Arizona",
+          "country": "USA",
+          "landmark": "Grand Canyon National Park"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "firstName": "Isabella",
+      "lastName": "Wilson",
+      "email": "isabella.wilson@example.com",
+      "password": "IWilson2023!",
+      "mobileNumberList": ["333-222-1111"],
+      "createdDate": "2023-09-11",
+      "updatedDate": "2023-09-11",
+      "status": "active",
+      "dob": "1983-10-24",
+      "addressList": [
+        {
+          "city": "Denver",
+          "pincode": "80201",
+          "state": "Colorado",
+          "country": "USA",
+          "landmark": "Red Rocks Amphitheatre"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "firstName": "Liam",
+      "lastName": "Jones",
+      "email": "liam.jones@example.com",
+      "password": "JonesLiam*456",
+      "mobileNumberList": ["666-888-2222"],
+      "createdDate": "2023-09-10",
+      "updatedDate": "2023-09-10",
+      "status": "active",
+      "dob": "1979-07-08",
+      "addressList": [
+        {
+          "city": "Las Vegas",
+          "pincode": "89101",
+          "state": "Nevada",
+          "country": "USA",
+          "landmark": "The Strip"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "firstName": "Ava",
+      "lastName": "Johnson",
+      "email": "ava.johnson@example.com",
+      "password": "AJ2023$",
+      "mobileNumberList": ["999-555-4444"],
+      "createdDate": "2023-09-09",
+      "updatedDate": "2023-09-09",
+      "status": "inactive",
+      "dob": "1986-06-13",
+      "addressList": [
+        {
+          "city": "Orlando",
+          "pincode": "32801",
+          "state": "Florida",
+          "country": "USA",
+          "landmark": "Walt Disney World Resort"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "firstName": "Oliver",
+      "lastName": "Davis",
+      "email": "oliver.davis@example.com",
+      "password": "ODavis2023*",
+      "mobileNumberList": ["111-666-3333"],
+      "createdDate": "2023-09-08",
+      "updatedDate": "2023-09-08",
+      "status": "active",
+      "dob": "1984-04-03",
+      "addressList": [
+        {
+          "city": "San Diego",
+          "pincode": "92101",
+          "state": "California",
+          "country": "USA",
+          "landmark": "Balboa Park"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "firstName": "Sophia",
+      "lastName": "Brown",
+      "email": "sophia.brown@example.com",
+      "password": "BrownS2023!",
+      "mobileNumberList": ["777-444-8888"],
+      "createdDate": "2023-09-07",
+      "updatedDate": "2023-09-07",
+      "status": "active",
+      "dob": "1981-08-07",
+      "addressList": [
+        {
+          "city": "Austin",
+          "pincode": "73301",
+          "state": "Texas",
+          "country": "USA",
+          "landmark": "Texas State Capitol"
+        }
+      ]
+    }
+  ]
+    
+}

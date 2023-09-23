@@ -1,25 +1,2 @@
-<h1 class="border">PARENT COMPONENT</h1>
-
-<div #heading>    
-      Welcome to View child
-
-</div>
-<div #heading>    
-  Welcome to View child
-
-</div>
-<div #heading>    
-  Welcome to View child
-
-</div>
-
-
-<button type="button" (click)="plus()">Incriment</button>
-<button type="button" (click)="minus()">Decriment</button>
-{{message}}
-
-
-
-<div class="border">
-  <app-users  [parentMessage]="usersList"   (childMessage)="messageFromChild($event)"></app-users>
-</div>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
