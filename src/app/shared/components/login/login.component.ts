@@ -67,7 +67,9 @@ export class LoginComponent implements OnInit {
     if (this.isLoggedIn) {
       this.message = FacebookConstants.LOGIN_SUCCESS;
        setTimeout(()=>{
-        this.router.navigate(['user-home']);
+      //  this.router.navigate(['user-home']);
+        this.router.navigate(['admin-home']);
+
        },3000)
     } else {
       this.message = FacebookConstants.LOGIN_FAILURE;

@@ -1,0 +1,25 @@
+{
+    "admin_menu":[
+        {
+            "id":1,
+            "name":"Users",
+            "description":"All Users List",
+            "iconName":"bi bi-person",
+            "link":"users"
+        },
+        {
+            "id":2,
+            "name":"Settings",
+            "description":"All Users List",
+            "iconName":"bi bi-gear",
+            "link":""
+        },
+        {
+            "id":3,
+            "name":"Logout",
+            "description":"All Users List",
+            "iconName":"bi bi-box-arrow-left",
+            "link":""
+        }
+    ]
+}

@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
   BASE_URL: string = "http://localhost:3000/users";
+  
 
   constructor(private http: HttpClient) { }
 
@@ -27,4 +28,7 @@ export class UserService {
     return this.http.put(`${this.BASE_URL}/${id}`, user);
   }
 
+   getAdminMenu(){
+    return this.http.get("assets/json/admin.menu.json");
+   }
 }

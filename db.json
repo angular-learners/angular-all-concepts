@@ -6,7 +6,17 @@
       "lastName": "Doe",
       "email": "johndoe@example.com",
       "password": "P@ssw0rd",
-      "mobileNumberList": ["123-456-7890", "987-654-3210"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-23",
       "updatedDate": "2023-09-23",
       "status": "active",
@@ -27,7 +37,17 @@
       "lastName": "Smith",
       "email": "alice.smith@example.com",
       "password": "SecurePass123",
-      "mobileNumberList": ["555-123-4567"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-22",
       "updatedDate": "2023-09-22",
       "status": "active",
@@ -48,7 +68,17 @@
       "lastName": "Johnson",
       "email": "robert.johnson@example.com",
       "password": "Passw0rd!",
-      "mobileNumberList": ["777-888-9999"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-21",
       "updatedDate": "2023-09-21",
       "status": "inactive",
@@ -69,7 +99,17 @@
       "lastName": "Brown",
       "email": "emily.brown@example.com",
       "password": "BrownE@123",
-      "mobileNumberList": ["333-555-7777"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-20",
       "updatedDate": "2023-09-20",
       "status": "active",
@@ -90,7 +130,17 @@
       "lastName": "Lee",
       "email": "david.lee@example.com",
       "password": "LeeD@2023",
-      "mobileNumberList": ["111-222-3333"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-19",
       "updatedDate": "2023-09-19",
       "status": "active",
@@ -111,7 +161,17 @@
       "lastName": "Wilson",
       "email": "sophia.wilson@example.com",
       "password": "SecurePass321",
-      "mobileNumberList": ["888-777-6666"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-18",
       "updatedDate": "2023-09-18",
       "status": "active",
@@ -132,7 +192,17 @@
       "lastName": "Martin",
       "email": "liam.martin@example.com",
       "password": "MartinLiam!23",
-      "mobileNumberList": ["444-333-2222"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-17",
       "updatedDate": "2023-09-17",
       "status": "inactive",
@@ -153,7 +223,17 @@
       "lastName": "Thompson",
       "email": "olivia.thompson@example.com",
       "password": "ThompsonOlivia$",
-      "mobileNumberList": ["999-000-1111"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-16",
       "updatedDate": "2023-09-16",
       "status": "active",
@@ -174,7 +254,17 @@
       "lastName": "Clark",
       "email": "noah.clark@example.com",
       "password": "ClarkNoah!2023",
-      "mobileNumberList": ["222-444-6666"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-15",
       "updatedDate": "2023-09-15",
       "status": "active",
@@ -195,7 +285,17 @@
       "lastName": "Harris",
       "email": "ava.harris@example.com",
       "password": "HarrisAva456",
-      "mobileNumberList": ["777-666-5555"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-14",
       "updatedDate": "2023-09-14",
       "status": "active",
@@ -216,7 +316,17 @@
       "lastName": "Jackson",
       "email": "mia.jackson@example.com",
       "password": "JacksonMia#789",
-      "mobileNumberList": ["111-333-5555"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-13",
       "updatedDate": "2023-09-13",
       "status": "active",
@@ -237,7 +347,17 @@
       "lastName": "Anderson",
       "email": "ethan.anderson@example.com",
       "password": "EAnderson789!",
-      "mobileNumberList": ["555-777-9999"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-12",
       "updatedDate": "2023-09-12",
       "status": "active",
@@ -258,7 +378,17 @@
       "lastName": "Wilson",
       "email": "isabella.wilson@example.com",
       "password": "IWilson2023!",
-      "mobileNumberList": ["333-222-1111"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-11",
       "updatedDate": "2023-09-11",
       "status": "active",
@@ -279,7 +409,17 @@
       "lastName": "Jones",
       "email": "liam.jones@example.com",
       "password": "JonesLiam*456",
-      "mobileNumberList": ["666-888-2222"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-10",
       "updatedDate": "2023-09-10",
       "status": "active",
@@ -300,7 +440,17 @@
       "lastName": "Johnson",
       "email": "ava.johnson@example.com",
       "password": "AJ2023$",
-      "mobileNumberList": ["999-555-4444"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-09",
       "updatedDate": "2023-09-09",
       "status": "inactive",
@@ -321,7 +471,17 @@
       "lastName": "Davis",
       "email": "oliver.davis@example.com",
       "password": "ODavis2023*",
-      "mobileNumberList": ["111-666-3333"],
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
       "createdDate": "2023-09-08",
       "updatedDate": "2023-09-08",
       "status": "active",
@@ -342,7 +502,9 @@
       "lastName": "Brown",
       "email": "sophia.brown@example.com",
       "password": "BrownS2023!",
-      "mobileNumberList": ["777-444-8888"],
+      "mobileNumberList": [
+        "777-444-8888"
+      ],
       "createdDate": "2023-09-07",
       "updatedDate": "2023-09-07",
       "status": "active",
@@ -356,7 +518,82 @@
           "landmark": "Texas State Capitol"
         }
       ]
+    },
+    {
+      "firstName": "Raj",
+      "lastName": "kumar",
+      "email": "rajkumar@gmail.com",
+      "password": "12345678",
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900999000"
+        },
+        {
+          "mobileNumber": "9900999332"
+        }
+      ],
+      "createdDate": "",
+      "updatedDate": "",
+      "status": "active",
+      "dob": "2023-09-09",
+      "addressList": [
+        {
+          "city": "Hyderbad",
+          "pincode": "500072",
+          "state": "Telengana",
+          "country": "India",
+          "landmark": "Near D Mart"
+        },
+        {
+          "city": "Hyderbad",
+          "pincode": "500073",
+          "state": "Telengana",
+          "country": "India",
+          "landmark": "Near Spencers"
+        }
+      ],
+      "id": 18
+    },
+    {
+      "firstName": "rohit",
+      "lastName": "sharma",
+      "email": "rohitsharma@gmail.com",
+      "password": "Rohit@1234",
+      "mobileNumberList": [
+        {
+          "mobileNumber": "9900990099"
+        },
+        {
+          "mobileNumber": "9900990088"
+        },
+        {
+          "mobileNumber": "9900990077"
+        }
+      ],
+      "createdDate": "",
+      "updatedDate": "",
+      "status": "active",
+      "dob": "2023-09-08",
+      "addressList": [
+        {
+          "city": "Hyderbad",
+          "pincode": "500072",
+          "state": "Telengana",
+          "country": "India",
+          "landmark": "Near D Mart"
+        },
+        {
+          "city": "Hyderbad",
+          "pincode": "500073",
+          "state": "Telengana",
+          "country": "India",
+          "landmark": "Near Govt College"
+        }
+      ],
+      "id": 19
     }
   ]
-    
 }

@@ -1,1 +1,88 @@
-<p>create-account works!</p>
+<div class="container mt-3">
+    <form [formGroup]="createAccountForm" (ngSubmit)="saveAccount()">
+        <div class="card p-3 w-50 m-auto">
+            <div class="alert alert-success" *ngIf="message">
+                {{message}}
+            </div>
+            <div class="card-body">
+                <h3>Create Account</h3>
+                <div class="form-group">
+                    <label for="firstName">FirstName</label>
+                    <input type="text" name="firstName" id="firstName" class="form-control" formControlName="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">LastName</label>
+                    <input type="text" name="lastName" id="lastName" class="form-control" formControlName="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" formControlName="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control"
+                        formControlName="password">
+                </div>
+                <div class="form-group mt-2">
+                    <div class="d-flex justify-content-between">
+                        <div><label for="mobileNumber">Mobile Number</label></div>
+                        <div> <button type="button" class="btn btn-success" (click)="addMobileNumber()"><i
+                                    class="bi bi-plus-circle"></i></button></div>
+                    </div>
+                    <div formArrayName="mobileNumberList">
+                        <div *ngFor="let mobileNumber of getMobileNumbers.controls;let index=index">
+                            <div [formGroupName]="index" class="d-flex">
+                                <div class="mt-2">
+                                    <input type="mobileNumber" name="mobileNumber" id="mobileNumber"
+                                        class="form-control" formControlName="mobileNumber"
+                                        placeholder="Enter Mobile Number {{index+1}}">
+                                </div>
+                                <div class="mt-2 mx-2">
+                                    <button type="button" (click)="removeMobileNumber(index)" class="btn btn-danger"><i
+                                            class="bi bi-dash-circle"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Dob</label>
+                    <input type="date" name="dob" id="dob" class="form-control" formControlName="dob">
+                </div>
+                <div class="form-group mt-2">
+                    <div class="d-flex justify-content-between">
+                        <div><label for="address">Address</label></div>
+                        <div> <button type="button" class="btn btn-success" (click)="addAddress()"><i
+                                    class="bi bi-plus-circle"></i></button></div>
+                    </div>
+                    <div formArrayName="addressList">
+                        <div *ngFor="let address of getAddresses.controls;let index=index">
+                            <div [formGroupName]="index" class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <input type="text" name="city" id="city" class="form-control" formControlName="city"
+                                        placeholder="city {{index+1}}">
+                                    <input type="text" name="pincode" id="pincode" class="form-control"
+                                        formControlName="pincode" placeholder="pincode {{index+1}}">
+                                    <input type="text" name="state" id="state" class="form-control"
+                                        formControlName="state" placeholder="state {{index+1}}">
+                                    <input type="text" name="country" id="country" class="form-control"
+                                        formControlName="country" placeholder="country {{index+1}}">
+                                    <input type="text" name="landmark" id="landmark" class="form-control"
+                                        formControlName="landmark" placeholder="landmark {{index+1}}">
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-danger" (click)="removeAddress(index)"><i
+                                            class="bi bi-dash-circle"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-end">
+                <div><button type="submit" class="btn btn-primary">Create Account</button></div>
+            </div>
+        </div>
+
+    </form>
+</div>

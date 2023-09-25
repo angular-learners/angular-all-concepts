@@ -1,1 +1,16 @@
-<p>admin-home works!</p>
+<div class="container">
+    <div class="row mt-0 mt-2">
+          <div class="col-md-2">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let menu of menuList">
+                       <span class="mx-2"><i class="{{menu.iconName}}"></i></span> <span>
+                        <a  routerLink="{{menu.link}}">{{menu.name}}</a>
+                       </span>
+                </li>
+              </ul>
+          </div>
+          <div class="col-md-10">
+              <router-outlet></router-outlet>
+          </div>
+    </div>
+</div>

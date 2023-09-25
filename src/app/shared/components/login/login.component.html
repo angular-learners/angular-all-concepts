@@ -3,22 +3,22 @@
         <div class="col-md-6">
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
             <div  [ngClass]=" isLoggedIn ? 'alert alert-success':'alert alert-danger'" *ngIf="message">
                  {{message}}
             </div>
          <!-- {{loginForm.value | json }} -->
             <form [formGroup]="loginForm" (ngSubmit)="login()">
-                <div class="card p-2">
+                <div class="card p-2 box-shadow">
                     <h3 class="text-center">Login</h3>
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="emai"><i class="bi bi-envelope"></i>Email</label>
-                            <input type="email" name="email" id="email" placeholder="email" class="form-control" formControlName="email">
+                            <label for="email"><i class="bi bi-envelope mx-2"></i>Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email" class="form-control" formControlName="email">
                         </div>
                         <div class="form-group mt-2">
-                            <label for="password"> <i class="bi bi-key"></i>Passsword</label>
-                            <input type="password" name="password" id="password" placeholder="password" class="form-control" formControlName="password">
+                            <label for="password"> <i class="bi bi-key mx-2"></i>Passsword</label>
+                            <input type="password" name="password" id="password" placeholder="Enter Password" class="form-control" formControlName="password">
                         </div>
                         <div class="form-group mt-2">
                           <button type="submit" class="btn btn-primary w-100">Login</button>
