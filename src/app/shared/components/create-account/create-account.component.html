@@ -5,23 +5,53 @@
                 {{message}}
             </div>
             <div class="card-body">
-                <h3>Create Account</h3>
+                <h3>{{ selectedId==0? 'Create Account':'Update Account'}}</h3>
                 <div class="form-group">
                     <label for="firstName">FirstName</label>
                     <input type="text" name="firstName" id="firstName" class="form-control" formControlName="firstName">
+                    <div *ngIf="feildError('firstName')">
+                        <div *ngIf="feildTypeError('firstName','required')" class="text-danger fs-12">
+                            firstName is required
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="lastName">LastName</label>
                     <input type="text" name="lastName" id="lastName" class="form-control" formControlName="lastName">
+                    <div *ngIf="feildError('lastName')">
+                        <div *ngIf="feildTypeError('lastName','required')" class="text-danger fs-12">
+                            lastName is required
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" class="form-control" formControlName="email">
+                    <!-- <div *ngIf="createAccountForm.controls['email'].invalid && createAccountForm.controls['email'].touched">
+                         <div *ngIf="createAccountForm.controls['email'].errors?.['required']" class="text-danger">
+                            email is required
+                         </div>
+                    </div> -->
+                    <!-- <div *ngIf="feildError('email')">
+                        <div *ngIf="createAccountForm.controls['email'].errors?.['required']" class="text-danger">
+                           email is required
+                        </div>
+                   </div> -->
+                    <div *ngIf="feildError('email')">
+                        <div *ngIf="feildTypeError('email','required')" class="text-danger fs-12">
+                            email is required
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" class="form-control"
                         formControlName="password">
+                        <div *ngIf="feildError('password')">
+                            <div *ngIf="feildTypeError('password','required')" class="text-danger fs-12">
+                                password is required
+                            </div>
+                        </div>
                 </div>
                 <div class="form-group mt-2">
                     <div class="d-flex justify-content-between">
@@ -31,11 +61,17 @@
                     </div>
                     <div formArrayName="mobileNumberList">
                         <div *ngFor="let mobileNumber of getMobileNumbers.controls;let index=index">
+                            <!-- {{mobileNumber | json}} -->
                             <div [formGroupName]="index" class="d-flex">
                                 <div class="mt-2">
                                     <input type="mobileNumber" name="mobileNumber" id="mobileNumber"
                                         class="form-control" formControlName="mobileNumber"
                                         placeholder="Enter Mobile Number {{index+1}}">
+                                        <div  *ngIf="mobileNumberValidations(index).controls['mobileNumber'].invalid && mobileNumberValidations(index).controls['mobileNumber'].touched">
+                                            <div *ngIf="mobileNumberValidations(index).controls['mobileNumber'].errors?.['required']" class="text-danger fs-12">
+                                              mobile Number is required
+                                             </div>            
+                                        </div>
                                 </div>
                                 <div class="mt-2 mx-2">
                                     <button type="button" (click)="removeMobileNumber(index)" class="btn btn-danger"><i
@@ -48,6 +84,11 @@
                 <div class="form-group">
                     <label for="dob">Dob</label>
                     <input type="date" name="dob" id="dob" class="form-control" formControlName="dob">
+                    <div *ngIf="feildError('dob')">
+                        <div *ngIf="feildTypeError('dob','required')" class="text-danger fs-12">
+                            dob is required
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group mt-2">
                     <div class="d-flex justify-content-between">
@@ -61,14 +102,39 @@
                                 <div>
                                     <input type="text" name="city" id="city" class="form-control" formControlName="city"
                                         placeholder="city {{index+1}}">
+                                        <div  *ngIf="addressValidations(index).controls['city'].invalid && addressValidations(index).controls['city'].touched">
+                                            <div *ngIf="addressValidations(index).controls['city'].errors?.['required']" class="text-danger fs-12">
+                                             city is required {{index+1}}
+                                             </div>            
+                                        </div>
                                     <input type="text" name="pincode" id="pincode" class="form-control"
                                         formControlName="pincode" placeholder="pincode {{index+1}}">
+                                        <div  *ngIf="addressValidations(index).controls['pincode'].invalid && addressValidations(index).controls['pincode'].touched">
+                                            <div *ngIf="addressValidations(index).controls['pincode'].errors?.['required']" class="text-danger fs-12">
+                                             pincode is required {{index+1}}
+                                             </div>            
+                                        </div>
                                     <input type="text" name="state" id="state" class="form-control"
                                         formControlName="state" placeholder="state {{index+1}}">
+                                        <div  *ngIf="addressValidations(index).controls['state'].invalid && addressValidations(index).controls['state'].touched">
+                                            <div *ngIf="addressValidations(index).controls['state'].errors?.['required']" class="text-danger fs-12">
+                                             state is required {{index+1}}
+                                             </div>            
+                                        </div>
                                     <input type="text" name="country" id="country" class="form-control"
                                         formControlName="country" placeholder="country {{index+1}}">
+                                        <div  *ngIf="addressValidations(index).controls['country'].invalid && addressValidations(index).controls['country'].touched">
+                                            <div *ngIf="addressValidations(index).controls['country'].errors?.['required']" class="text-danger fs-12">
+                                             country is required {{index+1}}
+                                             </div>            
+                                        </div>
                                     <input type="text" name="landmark" id="landmark" class="form-control"
                                         formControlName="landmark" placeholder="landmark {{index+1}}">
+                                        <div  *ngIf="addressValidations(index).controls['landmark'].invalid && addressValidations(index).controls['landmark'].touched">
+                                            <div *ngIf="addressValidations(index).controls['landmark'].errors?.['required']" class="text-danger fs-12">
+                                             landmark is required {{index+1}}
+                                             </div>            
+                                        </div>
                                 </div>
                                 <div>
                                     <button type="button" class="btn btn-danger" (click)="removeAddress(index)"><i
@@ -80,7 +146,7 @@
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-end">
-                <div><button type="submit" class="btn btn-primary">Create Account</button></div>
+                <div><button type="submit" class="btn btn-primary" [disabled]="createAccountForm.invalid">{{ selectedId==0? 'Create Account':'Update Account'}}</button></div>
             </div>
         </div>
 

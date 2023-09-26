@@ -12,6 +12,7 @@
                 <th>Created Date</th>
                 <th>Updated Date</th>
                 <th>Active</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -21,9 +22,12 @@
                 <td>{{item.lastName}}</td>
                 <td>{{item.email}}</td>
                 <td>{{item.dob}}</td>
-                <td>{{item.createdDate}}</td>
-                <td>{{item.updatedDate}}</td>
+                <td>{{item.createdDate | date:'dd-MM-yyyy'}}</td>
+                <td>{{item.updatedDate | date:'dd-MM-yyyy'}}</td>
                 <td [ngClass]="item.status=='active'?'bg-success text-white':'bg-danger text-white'">{{item.status}}</td>
+                <td><button type="button" class="btn btn-primary mx-2" (click)="edit(item.id)"><i class="bi bi-pen"></i></button>
+                 <button type="button" class="btn btn-danger" (click)="deleteUser(item.id)"><i class="bi bi-trash"></i></button>
+                </td>
             </tr>
         </tbody>
     </table>

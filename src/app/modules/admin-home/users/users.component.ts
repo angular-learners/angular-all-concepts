@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from 'src/app/shared/services/user.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { UserService } from 'src/app/shared/services/user.service';
 })
 export class UsersComponent implements OnInit {
   userList:any[]=[];
-   constructor(private userService:UserService){
+   constructor(private userService:UserService,private router:Router){
 
    }
   ngOnInit(): void {
@@ -22,6 +23,24 @@ export class UsersComponent implements OnInit {
         next:(res:any)=>{
           console.log(res);
           this.userList=[...res];
+        },
+        error:(err:any)=>{
+          console.log(err);
+        }
+      }
+    )
+   }
+
+   edit(id:number){
+     this.router.navigate(['update-account',id]);
+   }
+
+   deleteUser(id:number){
+    this.userService.deleteUserById(id).subscribe(
+      {
+        next:(res:any)=>{
+          console.log(res);
+          this.getAllUsers();
         },
         error:(err:any)=>{
           console.log(err);

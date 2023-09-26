@@ -27,6 +27,9 @@ export class UserService {
   updateUserById(id: number, user: any) {
     return this.http.put(`${this.BASE_URL}/${id}`, user);
   }
+  deleteUserById(id: number) {
+    return this.http.delete(`${this.BASE_URL}/${id}`);
+  }
 
    getAdminMenu(){
     return this.http.get("assets/json/admin.menu.json");

@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'create-account', component: CreateAccountComponent },
+  { path: 'update-account/:id', component: CreateAccountComponent },
+
   {path:'',loadChildren:()=>import("./modules/user-home/user-home.module").then(m=>m.UserHomeModule) },
   {path:'',loadChildren:()=>import("./modules/admin-home/admin-home.module").then(m=>m.AdminHomeModule)}
 ];
